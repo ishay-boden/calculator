@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="bootsrap+.css">
+<style>
+    .row{max-width: 100%;margin:0 auto;}
+    .numnum{width: 100%;}
+    .btn-afor{
+    color: #fff;
+    background-color: lightsteelblue;
+    border-color: lightsteelblue;
+  }
+    .col{margin:0 auto;}
+    #calculator{
+        background-color: lightslategrey;
+    }
+</style>
+
+<script src="clculator.js">
+    </script>
+</head>
+
+<body>
+    
+    <div id="calculator" style="max-width: 10cm;">
+        <div>
+            <input type="text" id="txtbx1" style="font-size: 0.5cm; width: 100%; border: none;"><br>
+            <input type="text" id="txtbx2" style="font-size: 1cm; width: 100%; border: none;">
+        </div>
+        <div class="row" >
+            <div class="col"><button onclick="calc(9)" type="button" class="btn btn-dark numnum" value="9">9</button></div>
+            <div class="col"><button onclick="calc(8)" type="button" class="btn btn-dark numnum" value="8">8</button></div>
+            <div class="col"><button onclick="calc(7)" type="button" class="btn btn-dark numnum" value="7">7</button></div>
+            <div class="col"><button onclick="operator('+')" type="button" class="btn btn-afor numnum" value="+">+</button></div>
+          </div><br>
+          <div class="row">
+            <div class="col"><button onclick="calc(6)" type="button" class="btn btn-dark numnum" value="6">6</button></div>
+            <div class="col"><button onclick="calc(5)" type="button" class="btn btn-dark numnum" value="5">5</button></div>
+            <div class="col"><button onclick="calc(4)" type="button" class="btn btn-dark numnum" value="4">4</button></div>
+            <div class="col"><button onclick="operator('-')" type="button" class="btn btn-afor numnum" value="-">-</button></div>
+          </div><br>
+          <div class="row">
+            <div class="col"><button onclick="calc(3)" type="button" class="btn btn-dark numnum" value="3">3</button></div>
+            <div class="col"><button onclick="calc(2)" type="button" class="btn btn-dark numnum" value="2">2</button></div>
+            <div class="col"><button onclick="calc(1)" type="button" class="btn btn-dark numnum" value="1">1</button></div>
+            <div class="col"><button onclick="operator('*')" type="button" class="btn btn-afor numnum" value="*">*</button></div>
+          </div><br>
+          <div class="row">
+            <div class="col"><button onclick="clearr()" type="button" class="btn btn-afor numnum" value="clear">clear</button></div>
+            <div class="col"><button onclick="calc(0)" type="button" class="btn btn-dark numnum" value="0">0</button></div>
+            <div class="col"><button onclick="operator('/')" type="button" class="btn btn-afor numnum" value="">/</button></div>
+            <div class="col"><button onclick="equal()" type="button" class="btn btn-afor numnum" value="=">=</button></div>
+          </div><br>
+          <div class="row">
+            <div class="col"><button onclick="clearr()" type="button" class="btn btn-afor numnum" value="reset">reset</button></div>
+          </div>
+    </div>
+
+</body>
+</html>
